@@ -36,3 +36,14 @@
  )
 
 (load-theme 'dark-blue2)
+
+(defun frame-left ()
+  (interactive)
+  (other-frame -1))
+
+(defun frame-right ()
+  (interactive)
+  (other-frame -1))
+
+(global-set-key (kbd "C-<left>") 'frame-left)
+(global-set-key (kbd "C-<right>") 'frame-right)
