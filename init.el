@@ -27,7 +27,9 @@
  '(custom-safe-themes
    (quote
     ("11e5e95bd3964c7eda94d141e85ad08776fbdac15c99094f14a0531f31a156da" default)))
- '(package-selected-packages (quote (color-theme-modern ##))))
+ '(package-selected-packages
+   (quote
+    (ag helm helm-ag-r find-file-in-repository auto-complete color-theme-modern ##))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -47,3 +49,14 @@
 
 (global-set-key (kbd "C-<left>") 'frame-left)
 (global-set-key (kbd "C-<right>") 'frame-right)
+
+(require 'auto-complete)
+(ac-config-default)
+(global-auto-complete-mode t) 
+
+
+(require 'find-file-in-repository)
+(global-set-key (kbd "C-x f") 'find-file-in-repository)
+
+(require 'helm)
+(require 'ag)
