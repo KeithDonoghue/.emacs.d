@@ -50,8 +50,8 @@
 (global-set-key (kbd "C-<left>") 'frame-left)
 (global-set-key (kbd "C-<right>") 'frame-right)
 
-(require 'desktop)
-(desktop-save-mode 1)
+;(require 'desktop)
+;(desktop-save-mode 1)
 
 (require 'auto-complete)
 (ac-config-default)
