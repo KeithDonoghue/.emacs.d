@@ -29,7 +29,7 @@
     ("11e5e95bd3964c7eda94d141e85ad08776fbdac15c99094f14a0531f31a156da" default)))
  '(package-selected-packages
    (quote
-    (helm-ag ag helm helm-ag-r find-file-in-repository auto-complete color-theme-modern ##))))
+    (virtualenvwrapper helm-ag ag helm helm-ag-r find-file-in-repository auto-complete color-theme-modern ##))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -62,4 +62,10 @@
 (global-set-key (kbd "C-x f") 'find-file-in-repository)
 
 
-(setq python-shell-interpreter "/usr/bin/python3")
+(require 'virtualenvwrapper)
+(venv-initialize-interactive-shells) ;; if you want interactive shell support
+(venv-initialize-eshell) ;; if you want eshell support
+;; note that setting `venv-location` is not necessary if you
+;; use the default location (`~/.virtualenvs`), or if the
+;; the environment variable `WORKON_HOME` points to the right place
+(setq venv-location "/home/keith/code/VirtualEnvs/")
