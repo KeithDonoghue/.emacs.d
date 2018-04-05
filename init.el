@@ -69,3 +69,6 @@
 ;; use the default location (`~/.virtualenvs`), or if the
 ;; the environment variable `WORKON_HOME` points to the right place
 (setq venv-location "/home/keith/code/VirtualEnvs/")
+
+(setq c-default-style "linux"
+      c-basic-offset 4)
