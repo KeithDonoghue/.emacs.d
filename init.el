@@ -72,3 +72,6 @@
 
 (setq c-default-style "linux"
       c-basic-offset 4)
+
+(set-face-attribute 'default nil :height 80)
+(global-auto-revert-mode t)
